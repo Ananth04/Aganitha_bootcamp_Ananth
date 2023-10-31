@@ -1,3 +1,7 @@
 **Websites with good UI:** | **Websites with bad UI**
 -------------------------- | ------------------------
-Grette                     | ZARA
+Westside                   | ZARA
+Rotten tomatoes            | IMDb
+Amazon                     | ebay
+ESPNcricinfo               | cricbuzz
+Netflix                    | aha
