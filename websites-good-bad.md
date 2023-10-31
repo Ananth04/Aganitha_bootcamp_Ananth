@@ -1,4 +1,4 @@
-**Websites with good UI:** | **Websites with bad UI**
+**Websites with good UI:** | **Websites with bad UI:**
 -------------------------- | ------------------------
 Westside                   | ZARA
 Rotten tomatoes            | IMDb
