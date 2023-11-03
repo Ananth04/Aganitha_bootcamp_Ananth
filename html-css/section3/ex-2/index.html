@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Blood Donor</title>
+</head>
+<body>
+    <h1>Become a Blood Donor Registration</h1>
+    <table align="center">
+        <form action="submit_registration.php" method="post">
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required aria-label="Full Name" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required aria-label="Email" /></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required aria-label="Phone Number" /></td>
+            </tr>
+            <tr>
+                <td><label for="bloodgroup">Blood Group:</label></td>
+                <td>
+                    <select id="bloodgroup" name="bloodgroup" required aria-label="Blood Group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="availability">Availability:</label></td>
+                <td>
+                    <fieldset>
+                        <legend>Availability</legend>
+                        <input type="checkbox" id="morning" name="availability" value="morning" aria-label="Morning Availability">
+                        <label for="morning">Morning</label><br>
+                        <input type="checkbox" id="afternoon" name="availability" value="afternoon" aria-label="Afternoon Availability">
+                        <label for="afternoon">Afternoon</label><br>
+                        <input type="checkbox" id="evening" name="availability" value="evening" aria-label="Evening Availability">
+                        <label for="evening">Evening</label><br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Additional Comments:</label></td>
+                <td><textarea id="comments" name="comments" rows="4" aria-label="Additional Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
