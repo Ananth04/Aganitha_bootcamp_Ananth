@@ -1,0 +1,21 @@
+.column {
+    float: left;
+    width: 30%;
+    height: 200px;
+    background-color: #f2f2f2;
+}
+
+.left-column {
+    margin-right: 20px;
+}
+
+.middle-column {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
