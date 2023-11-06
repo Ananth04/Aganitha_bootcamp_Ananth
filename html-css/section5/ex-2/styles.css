@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    padding:10px;
+}
+
+.column {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.column1 {
+    flex: 2;
+    background-color: #f2f2f2;
+    border:1px solid black;
+}
+
+.column2, .column3 {
+    flex: 1;
+    background-color: #e0e0e0;
+    border:1px solid black;
+}

@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.event {
+    width: 100px; 
+    height: 100px; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transition: background-color 0.3s;
+}
+
+.event:hover {
+    background-color: #555;
+}
+
+#event1:hover ~ body {
+    background-color: red;
+}
+
+#event2:hover ~ body {
+    background-color: blue;
+}
+
+#event3:hover ~ body {
+    background-color: green;
+}
+
+#event4:hover ~ body {
+    background-color: pink;
+}
+
+#event5:hover ~ body {
+    background-color: brown;
+}
+
+#event6:hover ~ body {
+    background-color: yellow;
+}
