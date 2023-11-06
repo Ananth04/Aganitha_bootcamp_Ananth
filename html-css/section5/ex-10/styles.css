@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    align-items: center;
+}
+
+label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input,
+textarea,
+button {
+    flex: 2;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    align-self: flex-start;
+}
