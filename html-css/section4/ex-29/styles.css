@@ -1,0 +1,14 @@
+.shop-now-button {
+    padding: 5px;
+    background-color: #e1b2d6;
+    color: #fff;
+    font-family: cursive;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop-now-button:hover {
+    background-color: #c482a3;
+}

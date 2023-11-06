@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #cc9966;
+}
+
+.dishes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dish {
+    width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #cc9966;
+}
+
+p {
+    color: #666;
+}

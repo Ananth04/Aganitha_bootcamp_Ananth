@@ -1,0 +1,12 @@
+.thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail-gallery img {
+    width: 120px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

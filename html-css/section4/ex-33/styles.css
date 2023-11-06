@@ -1,0 +1,12 @@
+.tech-header {
+    height: 80px;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
