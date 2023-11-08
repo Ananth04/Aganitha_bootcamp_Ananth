@@ -1,0 +1,48 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    min-height: 400px;
+  }
+  
+  .widget {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .widget1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  
+  .widget2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .widget3 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .widget4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .widget5 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  .widget6 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  

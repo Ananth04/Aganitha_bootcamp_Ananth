@@ -1,0 +1,49 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .column {
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

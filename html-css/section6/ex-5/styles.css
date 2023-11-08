@@ -1,0 +1,29 @@
+.product-catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+
+  
