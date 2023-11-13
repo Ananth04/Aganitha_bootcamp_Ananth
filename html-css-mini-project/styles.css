@@ -114,7 +114,6 @@ a:hover {
     max-width: 400px;
     margin: 0 auto 40px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item img {
@@ -135,11 +134,13 @@ a:hover {
 .menu-item1{
     grid-column: 1/span 2;
     grid-row: span 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item2{
     grid-column: 5/span 2;
     grid-row: span 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the about section */
