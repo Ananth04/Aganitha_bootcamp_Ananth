@@ -14,7 +14,7 @@ function fib2(n) {
       return n;
     }
     if (!memo[n]) {
-      memo[n] = fib2(n - 1, memo) + fib2(n - 2, memo);
+      memo[n] = fib2(n - 1) + fib2(n - 2);
     }
     return memo[n];
 }
