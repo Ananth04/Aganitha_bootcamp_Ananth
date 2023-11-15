@@ -7,4 +7,6 @@ const obj = {
     address: "Hyderabad"
 };
 
-console.log({name, age, address});
+console.log("Name: " + obj.name);
+console.log("Age: " + obj.age);
+console.log("Address: " + obj.address);
