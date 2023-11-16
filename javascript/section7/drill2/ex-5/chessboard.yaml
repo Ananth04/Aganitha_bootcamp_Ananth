@@ -1,0 +1,126 @@
+- - type: ♜
+    color: white
+    status: Not Captured
+  - type: ♞
+    color: white
+    status: Not Captured
+  - type: ♝
+    color: white
+    status: Not Captured
+  - type: ♛
+    color: white
+    status: Not Captured
+  - type: ♚
+    color: white
+    status: Not Captured
+  - type: ♝
+    color: white
+    status: Not Captured
+  - type: ♞
+    color: white
+    status: Not Captured
+  - type: ♜
+    color: white
+    status: Not Captured
+- - type: ♟
+    color: white
+    status: Not Captured
+  - type: ♟
+    color: white
+    status: Not Captured
+  - type: ♟
+    color: white
+    status: Not Captured
+  - type: ♟
+    color: white
+    status: Not Captured
+  - null
+  - type: ♟
+    color: white
+    status: Not Captured
+  - type: ♟
+    color: white
+    status: Not Captured
+  - type: ♟
+    color: white
+    status: Not Captured
+- - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+- - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+- - null
+  - null
+  - null
+  - type: ♟
+    color: white
+    status: Not Captured
+  - null
+  - null
+  - null
+  - null
+- - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+- - type: ♙
+    color: black
+    status: Not Captured
+  - type: ♙
+    color: black
+    status: Not Captured
+  - type: ♙
+    color: black
+    status: Not Captured
+  - null
+  - type: ♙
+    color: black
+    status: Not Captured
+  - type: ♙
+    color: black
+    status: Not Captured
+  - type: ♙
+    color: black
+    status: Not Captured
+  - type: ♙
+    color: black
+    status: Not Captured
+- - type: ♖
+    color: black
+    status: Not Captured
+  - type: ♘
+    color: black
+    status: Not Captured
+  - type: ♗
+    color: black
+    status: Not Captured
+  - type: ♕
+    color: black
+    status: Not Captured
+  - type: ♔
+    color: black
+    status: Not Captured
+  - type: ♗
+    color: black
+    status: Not Captured
+  - type: ♘
+    color: black
+    status: Not Captured
+  - type: ♖
+    color: black
+    status: Not Captured
