@@ -70,7 +70,7 @@ class Chessboard {
       return;
     }
     const pieceToCapture = this.board[endRow][endCol];
-    if (!pieceToCapture) {
+    if (!pieceToCapture || pieceToCapture.color == pieceToMove.color) {
       console.log('No piece to capture at the destination.');
       return;
     }
