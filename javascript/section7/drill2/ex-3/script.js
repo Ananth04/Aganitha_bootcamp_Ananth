@@ -102,8 +102,45 @@ myChessboard.printBoard();
 myChessboard.movePiece(1, 4, 3, 4);
 myChessboard.printBoard();
 
-myChessboard.movePiece(6, 3, 4, 3);
+myChessboard.movePiece(6, 4, 4, 4);
 myChessboard.printBoard();
 
-myChessboard.capturePiece(3, 4, 4, 3);
+//myChessboard.capturePiece(3, 4, 4, 3);
+//myChessboard.printBoard();
+
+myChessboard.movePiece(0, 6, 2, 5);
 myChessboard.printBoard();
+
+myChessboard.movePiece(7, 1, 5, 2);
+myChessboard.printBoard();
+
+myChessboard.movePiece(0, 5, 3, 2);
+myChessboard.printBoard();
+
+myChessboard.movePiece(6, 3, 5, 3);
+myChessboard.printBoard();
+
+myChessboard.movePiece(0, 1, 2, 2);
+myChessboard.printBoard();
+
+myChessboard.movePiece(7, 2, 3, 6);
+myChessboard.printBoard();
+
+myChessboard.capturePiece(2, 5, 4, 4);
+myChessboard.printBoard();
+
+myChessboard.capturePiece(3, 6, 0, 3);
+myChessboard.printBoard();
+
+myChessboard.capturePiece(3, 2, 6, 5);
+myChessboard.printBoard();
+
+console.log("Check+");
+
+myChessboard.movePiece(7, 4, 6, 4);
+myChessboard.printBoard();
+
+myChessboard.movePiece(2,2,4,3);
+myChessboard.printBoard();
+
+console.log("Checkmate#");
