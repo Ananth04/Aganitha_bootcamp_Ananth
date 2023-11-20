@@ -9,6 +9,10 @@ body{
 
 header{
     margin:0em;
+    position: fixed;
+  top: 0; 
+  width: 100%;
+  background-color: white;
 }
 
 nav {
@@ -16,6 +20,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.625em;
+    
 }
 
 h2{
@@ -53,8 +58,8 @@ nav a:hover {
 }
 
 .logo {
+    margin-top: 5em;
     align-items: center;
-    margin: 0 1.25em;
 }
 
 .logo img {
