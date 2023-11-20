@@ -2,7 +2,7 @@ body{
     font-family: MercurySSm-Book-Pro_Web,serif;
     height:100vh;
     color: #0a2458;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 170%;
     text-align: left;
 }
@@ -271,3 +271,14 @@ footer {
     color:rgb(139, 120, 12);
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 0.5em;
+    }
+}
