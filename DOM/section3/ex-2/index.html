@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Tabbed Content Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tab-container">
+    <div class="tab-header" onclick="showTab(1)">Tab 1</div>
+    <div class="tab-header" onclick="showTab(2)">Tab 2</div>
+    <div class="tab-header" onclick="showTab(3)">Tab 3</div>
+  </div>
+
+  <div class="tab tab-content active" id="tab1">Content for Tab 1</div>
+  <div class="tab tab-content" id="tab2">Content for Tab 2</div>
+  <div class="tab tab-content" id="tab3">Content for Tab 3</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

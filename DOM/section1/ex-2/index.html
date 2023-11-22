@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Click Counter</title>
+  <style>
+    body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="countButton">Click me</button>
+  <span id="clickCount">0</span>
+
+  <script>
+    const button = document.getElementById("countButton");
+    const countDisplay = document.getElementById("clickCount");
+
+    let count = 0;
+    function updateCount() {
+      count++;
+      countDisplay.textContent = count;
+    }
+
+    button.addEventListener("click", updateCount);
+  </script>
+</body>
+</html>

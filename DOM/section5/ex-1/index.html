@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collapsible Content Sections</title>
+  <style>
+    .section-header {
+      background-color: #f0f0f0;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .section-content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="section-header" onclick="toggleSection(1)">Section 1</div>
+    <div class="section-content" id="sectionContent1">
+      Content for Section 1
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" onclick="toggleSection(2)">Section 2</div>
+    <div class="section-content" id="sectionContent2">
+      Content for Section 2
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

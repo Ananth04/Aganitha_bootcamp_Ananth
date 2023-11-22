@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Image Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+    .main-image {
+      width: 400px;
+      height: 300px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="image1.jpg" class="thumbnail" onclick="changeImage('image1.jpg')" alt="Thumbnail 1">
+    <img src="image2.jpg" class="thumbnail" onclick="changeImage('image2.jpg')" alt="Thumbnail 2">
+    <img src="image3.jpg" class="thumbnail" onclick="changeImage('image3.jpg')" alt="Thumbnail 3">
+  </div>
+
+  <img src="image1.jpg" class="main-image" id="mainImage" alt="Main Image">
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello DOM</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function changeText() {
+        const myDiv = document.getElementById("myDiv");
+        myDiv.textContent = "Hello, DOM!";
+      }
+      changeText();
+    });
+  </script>
+</head>
+<body>
+  <div id="myDiv">Initial Text</div>
+</body>
+</html>
