@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biopharma Research Trends Analyzer</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="grid-container">
+  <header>
+    <div class="brand">
+      <div class="logo">
+        <img id = "pageLogo" src="images/logo.png" alt="Logo">
+      </div>
+        <h1 id="pageTitle">BIOPHARMAnalyzer</h1>
+    </div>
+      <nav class="navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pub_trends.html">Publication Trends</a></li>
+          <li><a href="research_dist.html">Research Distribution</a></li>
+          <li><a href="citation_comparison.html">Citation Comparison</a></li>
+          <li><a href="data_table.html">Dataset</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+    <div class="container">
+        <div class="filter">
+            <h2>Filters</h2>
+            <label>
+                <input type="checkbox" id="filterCategory1" class="filter-checkbox" value="Research_ID"> Research_ID
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory2" class="filter-checkbox" value="Publication_Year"> Publication_Year
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory3" class="filter-checkbox" value="Research_area"> Research_area
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory4" class="filter-checkbox" value="Disease_Focus"> Disease_Focus
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory5" class="filter-checkbox" value="Study_Type"> Study_Type
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory6" class="filter-checkbox" value="Citation_Count"> Citation_Count
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory7" class="filter-checkbox" value="Impact_Factor"> Impact_Factor
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory10" class="filter-checkbox" value="Funding_Source"> Funding_Source
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory8" class="filter-checkbox" value="Author_Count"> Author_Count
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterCategory9" class="filter-checkbox" value="Abstract"> Abstract
+            </label>
+        </div>
+        <div class="main-content">
+        <div class="input-for-index">
+            <input type="text" id="search" placeholder="Search here">
+            <button id="startSearch">Search</button>
+        </div>
+        <div class="display-section">
+            <div id="loadingIndicator">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+            <div class="footer-bxs">
+                <h4>Graphs & Dataset</h4>
+                <div class="footer-links">
+                    <a href="pub_trends.html">Line Graphs</a>
+                    <a href="research_dist.html">Pie Chart</a>
+                    <a href="citation_comparison.html">Bar Chart</a>
+                    <a href="data_table.html">Dataset</a>
+                </div>
+            </div>
+            <div class="footer-bxs">
+                <h3>BIOPHARMAnalyzer</h3>
+            </div>
+            <div class="footer-bxs">
+                <h4>Connect With Us</h4>
+                <div class="footer-links">
+                    <a href="#">Contact Support</a>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-bottom">
+                <p>© 2023 BIOPHARMAnalyzer | Terms & Conditions | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dataLoader.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+  /* Chart container styles */
+  .container {
+    max-width: 50em;
+    margin: 7.5em auto 1.25em;
+    padding: 0 1.25em;
+  }
+  
+  .input-section {
+    margin-bottom: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .spinner {
+    border: 0.25em solid rgba(0, 0, 0, 0.1);
+    border-top: 0.25em solid #3498db;
+    border-radius: 50%;
+    width: 1.875em;
+    height: 1.875em;
+    animation: spin 1s linear infinite;
+    margin: 1.25em auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #loadingIndicator {
+    display: none;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.25em;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 0.625em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #f9f9f9;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .results-section {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+  }
+  
+  .chart-container {
+    /*width: calc(33.33% - 20px);*/
+    margin-bottom: 1.25em;
+  }
+
+  @media screen and (max-width: 768px) {
+    body{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 0.25em;
+    }
+    
+}

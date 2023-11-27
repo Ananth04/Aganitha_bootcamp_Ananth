@@ -1,0 +1,244 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0E6D17;
+    font-size: 1em;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Sidebar and main content */
+    grid-template-rows: 6.25em 1fr auto; /* Header, main content, footer */
+    gap: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    color: #0E6D17;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #0E6D17;
+    grid-row: 1;
+}
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625em 1.25em;
+  }
+  
+  .logo img {
+    width: 5em;
+    height: 5em;
+    border-radius: 1em;
+  }
+  
+  .brand h1 {
+    margin: 0;
+    text-decoration: none;
+    color: #0E6D17;
+  }
+
+  .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625em 1.25em;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    margin-left: 1.25em;
+  }
+  
+  .navigation ul li a {
+    text-decoration: underline;
+    color: #0E6D17;
+    font-weight: bold;
+  }
+
+  .navigation .nav-links {
+    display: inline-block;
+  }
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #0E6D17;
+    margin: 4px 0;
+}
+
+.container {
+    grid-row: 2;
+}
+  
+.input-section {
+    margin-bottom: 1.25em;
+}
+
+.spinner {
+    border: 0.25em solid rgba(0, 0, 0, 0.1);
+    border-top: 0.25em solid #0E6D17;
+    border-radius: 50%;
+    width: 1.875em;
+    height: 1.875em;
+    animation: spin 1s linear infinite;
+    margin: 1.25em auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loadingIndicator {
+    display: none;
+    text-align: center;
+}
+
+footer{
+    grid-row: 3;
+    padding-bottom: 0;
+    margin: 0;
+    /*position: absolute;
+    bottom: 0;
+    width: 100%;*/
+}
+
+.footer-container {
+    /*position: fixed;
+    bottom: 0;
+    width: 100%;*/
+    text-align: center;
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 0.625em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1px 1fr;
+    flex-direction: column;
+    margin-top: 1.5em;
+    /* justify-content: flex-end; */
+}
+.footer-top {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: top;
+    margin-bottom: 1%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15em;
+    margin-top: 3%;
+    
+}
+.footer-links a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 0.75em;
+}
+.footer-links a:hover {
+    text-decoration:underline;
+}
+.footer-links a i {
+    border-radius: 50%;
+    color: #0E6D17;
+    background-color: #f9f9f9;
+    font-size: 3em;
+    margin-right: 0.625em;
+}
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5em;
+    padding-bottom: 0;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #f9f9f9;
+}
+p {
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.75em; /* Decrease font size for better readability */
+    }
+
+    .grid-container {
+        grid-template-rows: 6.25em 1fr auto; /* Let footer adjust its height based on content */
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    /* Other adjustments specific to this screen size */
+    .hamburger-menu {
+        display: block;
+        padding-right: 1em;
+      }
+    
+      /* Hide the navigation initially */
+      .navigation .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        z-index: 1001;
+        padding: 1em;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    
+      /* Show the navigation when hamburger menu is clicked */
+      .navigation .nav-links.active {
+        display: block;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.5em; /* Further decrease font size for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-rows: 6.25em auto auto; /* Allow header and footer to adjust their height based on content */
+    }
+
+    /* Other adjustments specific to this screen size */
+    .brand h1 {
+        font-size: 1.25em; /* Increase brand heading size for better visibility */
+    }
+    
+}

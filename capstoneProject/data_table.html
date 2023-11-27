@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="data_Table.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="brand">
+          <div class="logo">
+            <img id = "pageLogo" src="images/logo.png" alt="Logo">
+          </div>
+            <h1 id="pageTitle">BIOPHARMAnalyzer</h1>
+        </div>
+          <nav class="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pub_trends.html">Publication Trends</a></li>
+              <li><a href="research_dist.html">Research Distribution</a></li>
+              <li><a href="citation_comparison.html">Citation Comparison</a></li>
+              <li><a href="data_table.html">Dataset</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div id="container" style="padding: 120px 20px 10px 10px;">
+        <div id="loadingIndicator">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        <table id="data-table" class="display">
+            <thead>
+            </thead>
+            <tbody>
+                <!-- Table body will be dynamically generated -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+            <div class="footer-bxs">
+                <h4>Graphs & Dataset</h4>
+                <div class="footer-links">
+                    <a href="pub_trends.html">Line Graphs</a>
+                    <a href="research_dist.html">Pie Chart</a>
+                    <a href="citation_comparison.html">Bar Chart</a>
+                    <a href="data_table.html">Dataset</a>
+                </div>
+            </div>
+            <div class="footer-bxs">
+                <h3>BIOPHARMAnalyzer</h3>
+            </div>
+            <div class="footer-bxs">
+                <h4>Connect With Us</h4>
+                <div class="footer-links">
+                    <a href="#">Contact Support</a>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-bottom">
+                <p>© 2023 BIOPHARMAnalyzer | Terms & Conditions | Privacy Policy</p>
+                <p>India</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script type="module" src="data_Table.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
